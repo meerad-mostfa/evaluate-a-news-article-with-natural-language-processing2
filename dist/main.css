@@ -1,0 +1,134 @@
+/* تطبيق أنماط أساسية على جميع العناصر */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    background-color: #f0f0f0; /* تغيير اللون الخلفي إلى لون محايد */
+}
+
+/* تحديد نمط العرض لبعض العناصر */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* إعدادات النصوص الأساسية */
+body {
+    line-height: 1.6; /* زيادة ارتفاع السطر لتحسين قابلية القراءة */
+    font-family: Arial, sans-serif; /* تعيين نوع الخط الافتراضي */
+}
+
+/* إلغاء نمط القوائم */
+ol, ul {
+    list-style: none;
+}
+
+/* إزالة علامات الاقتباس الافتراضية من الاقتباسات */
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+
+/* إعدادات الجداول */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* إعدادات تخطيط الصفحة العامة */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e9ecef; /* تغيير اللون الخلفي للصفحة */
+}
+
+main {
+    flex: 2;
+    padding: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff; /* إضافة خلفية بيضاء للقسم */
+    border-radius: 8px; /* إضافة زوايا دائرية للقسم */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* إضافة ظل خفيف للقسم */
+    padding: 20px;
+}
+
+/* أنماط النموذج */
+form {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background: #f9f9f9; /* خلفية فاتحة للنموذج */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 22px); /* توفير المساحة للحشو */
+    line-height: 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* زوايا دائرية للإدخال */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff; /* خلفية زرقاء للزر */
+    color: #ffffff; /* نص أبيض للزر */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3; /* خلفية زرقاء داكنة عند التمرير فوق الزر */
+}
+
+/* إعدادات ترويسة الصفحة */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* محاذاة العناصر عموديًا */
+    padding: 20px;
+    background: #343a40; /* خلفية ترويسة داكنة */
+    color: #ffffff; /* نص أبيض في الترويسة */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.navigation a:hover {
+    text-decoration: underline; /* إضافة خط تحت الروابط عند التمرير فوقها */
+}
+
+/* إعدادات التذييل */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #343a40; /* خلفية التذييل داكنة */
+    color: #ffffff; /* نص أبيض في التذييل */
+}

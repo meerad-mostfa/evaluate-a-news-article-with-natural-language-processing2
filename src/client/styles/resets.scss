@@ -1,0 +1,65 @@
+/* قاعدة لتطبيق نمط الصندوق على جميع العناصر */
+* {
+    box-sizing: border-box;
+}
+
+/* تعيين الأساسيات لجميع العناصر */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* إعادة تعيين العرض للعناصر من نوع HTML5 في المتصفحات القديمة */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* ضبط خط النص في الجسم */
+body {
+    line-height: 1;
+}
+
+/* إزالة النقاط والرموز من القوائم */
+ol, ul {
+    list-style: none;
+}
+
+/* إزالة الاقتباسات من blockquotes وq */
+blockquote, q {
+    quotes: none;
+}
+
+/* إزالة أي محتوى إضافي حول الاقتباسات */
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* دمج الحدود في الجداول وإزالة الفراغات */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* إزالة النقاط من القوائم */
+ul {
+    list-style-type: none;
+}
